@@ -1,0 +1,181 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* Main section */
+.profile-section {
+    width: 100%;
+    max-width: 1100px;
+
+    text-align: center;
+}
+
+
+/* Heading */
+.profile-section h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+/* Subtitle */
+.subtitle {
+    color: #d5d5d5;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* Flexbox container */
+.profile-container {
+    display: flex;
+
+    /* Arrange cards horizontally */
+    justify-content: center;
+
+    /* Space between cards */
+    gap: 30px;
+
+    /* Allow cards to move to next line on small screens */
+    flex-wrap: wrap;
+}
+
+
+/* Profile card */
+.profile-card {
+    width: 300px;
+
+    background-color: white;
+
+    padding: 30px 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+
+/* Card hover effect */
+.profile-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Profile picture */
+.profile-picture {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    border: 5px solid #4f46e5;
+
+    margin-bottom: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.avatar-ayush {
+    background: linear-gradient(135deg, #6366f1, #312e81);
+}
+
+.avatar-aniket {
+    background: linear-gradient(135deg, #10b981, #065f46);
+    border-color: #059669;
+}
+
+.avatar-mani {
+    background: linear-gradient(135deg, #f97316, #9a3412);
+    border-color: #dc2626;
+}
+
+
+/* Names using ID selector */
+#ayush {
+    color: #4f46e5;
+}
+
+#aniket {
+    color: #059669;
+}
+
+#mani {
+    color: #dc2626;
+}
+
+
+/* Name */
+.profile-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+/* Role using class selector */
+.role {
+    font-size: 17px;
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+
+/* Bio */
+.bio {
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .profile-section h1 {
+        font-size: 35px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
